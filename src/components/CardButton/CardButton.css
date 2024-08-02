@@ -1,0 +1,15 @@
+.card-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-weight: var(--font-semi-bold);
+    backdrop-filter: blur(24px);
+    padding: 1.25rem 1.5rem;
+    border: none;
+    text-align: start;
+    display: block;
+}
+
+.card-button:hover {
+    background-color: grey;
+}
