@@ -1,0 +1,17 @@
+.input {
+    border: none;
+    background: none;
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    border-bottom: 1px solid #272727;
+    width: 100%;
+}
+
+.input-title {
+    font-size: var(--h1-font-size);
+}
+
+.invalid {
+    border: 1px solid red;
+    background: red;
+}

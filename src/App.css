@@ -41,7 +41,20 @@
   margin: 0 auto;
   padding: 2rem;
   /* text-align: center; */
+  color: white;
 }
+
+.app {
+  /* display: flex;
+  padding: 30px; */
+  font-family: var(--body-font);
+}
+
+.journal {
+  display: flex;
+  padding: 50px;
+}
+
 
 .logo {
   height: 6em;
@@ -54,6 +67,11 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+body {
+  background-color: var(--body-color);
 }
 
 @keyframes logo-spin {

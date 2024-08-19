@@ -1,24 +1,13 @@
 import './Button.css';
 import { useState } from 'react';
 
-function Button() {
+function Button({text, onClick}) {
 
-  const [text, setText] = useState('All countries');
-
-
-  const clicked = () => {
-    
-    console.log('Click');
-    setText('Hide all countries');
-    console.log(text);
-
-  
-  }
 
 
   return (
     
-      <button onClick={clicked} className='button'>{text}</button>
+      <button className='button' onClick={onClick}>{text}</button>
       
     
   )

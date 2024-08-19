@@ -1,6 +1,6 @@
-.left-panel {
-    min-width: 400px;
+.post-list {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
+
