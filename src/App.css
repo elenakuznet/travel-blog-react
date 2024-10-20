@@ -50,10 +50,18 @@
   font-family: var(--body-font);
 }
 
-.journal {
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+
+
+/* .journal {
   display: flex;
   padding: 50px;
-}
+} */
 
 
 .logo {

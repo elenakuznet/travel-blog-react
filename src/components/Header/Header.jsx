@@ -18,7 +18,7 @@ const Header = () => {
       <nav className="nav container">
         {/* Logo */}
         <NavLink to="/travel-blog-react" className="nav__logo" onClick={closeMenu}>
-          Travel
+          Travel with me
         </NavLink>
 
         {/* Menu Toggle Button */}

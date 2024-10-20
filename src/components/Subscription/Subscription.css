@@ -1,0 +1,41 @@
+/* .newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+} */
+
+.subscription {
+    display: grid;
+    grid-template-columns: 460px 340px;
+    column-gap: 8.5rem;
+    padding-block: 1rem 5rem;
+}
+
+.subscription__image {
+    position: relative;
+    justify-self: center;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.subscription__img {
+    width: 100%;
+    height: auto;
+    transition: transform .4s;
+    border-radius: 10px;
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-email {
+    padding: 1rem 1.25rem;
+    background-color: var(--container-color);
+    border: none;
+}

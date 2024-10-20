@@ -6,15 +6,16 @@ const About = () => {
     <div className="about">
       <div className="about__header">
         <h1>About Me</h1>
-        <p>Hi! I'm Emily, a wanderlust-driven girl with a passion for storytelling.</p>
+        
       </div>
       
       <div className="about__content">
         <div className="about__image">
-          <img src="/travel-blog-react/img/about/about-emily.jpg" alt="Emily traveling" />
+          <img src="/travel-blog-react/img/about/about.jpeg" className="about__img" alt="Emily traveling" />
         </div>
         
         <div className="about__text">
+          <p>Hi! I'm Elena, a wanderlust-driven girl with a passion for storytelling.</p>
           <h2>My Journey</h2>
           <p>
             Ever since I was a little girl, I dreamed of exploring the world. My heart beats faster at the thought of stepping into unknown lands, tasting new foods, and immersing myself in different cultures. Through this blog, I want to share those experiences with you—my stories, my adventures, and my view of the world.

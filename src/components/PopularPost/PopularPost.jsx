@@ -1,8 +1,11 @@
 import { useParams } from 'react-router-dom';
 import { destinations } from '../../data'; // Import the destinations array
 import './PopularPost.css';
+import BucketList from '../BucketList/BucketList';
 
 const PopularPost = () => {
+
+
   const { index } = useParams();  // Get the index from the URL
   const destination = destinations[index];  // Look up the destination
 
@@ -13,6 +16,7 @@ const PopularPost = () => {
   return (
     <div className="post">
       <h1 className="post__title">{destination.name}</h1>
+      {/* <BucketList /> */}
       
       {/* Render each paragraph of content */}
       {destination.content.map((paragraph, idx) => (

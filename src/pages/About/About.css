@@ -36,6 +36,16 @@
     justify-self: center;
     overflow: hidden;
     border-radius: 10px;
+    /* max-width: 500px;
+    max-height: 500px;
+    object-fit: cover; */
+
+  }
+
+  .about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
   }
   
   .about__image:hover .about__img {

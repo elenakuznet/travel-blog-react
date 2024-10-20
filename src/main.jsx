@@ -23,31 +23,11 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "popular", element: <Popular /> },
       { path: "popular/:index", element: <PopularPost /> },  // Dynamic route for PopularPost
+      // { path: "home/:index", element: <PopularPost />},
       { path: "explore", element: <Explore /> },
-      // { path: "santorini-greece", element: <PopularPost title="Santorini, Greece" /> },
-      // { path: "kyoto-japan", element: <PopularPost title="Kyoto, Japan" /> },
-      // { path: "maui-hawaii", element: <PopularPost title="Maui, Hawaii" /> },
-      // { path: "amalfi-coast-italy", element: <PopularPost title="Amalfi Coast, Italy" /> },
     ],
   },
 ]);
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/travel-blog-react",
-//     element: <App />,  // App is now the layout for all nested routes
-//     children: [
-//       { path: "home", element: <Home/> },
-//       { path: "about", element: <About /> },
-//       { path: "popular", element: <Popular /> },
-//       { path: "explore", element: <Explore /> },
-//       { path: "santorini-greece", element: <PopularPost title="Santorini, Greece" /> },
-//       { path: "kyoto-japan", element: <PopularPost title="Kyoto, Japan" /> },
-//       { path: "maui-hawaii", element: <PopularPost title="Maui, Hawaii" /> },
-//       { path: "amalfi-coast-italy", element: <PopularPost title="Amalfi Coast, Italy" /> },
-//     ],
-//   },
-// ]);
 
 
 

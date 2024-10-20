@@ -1,16 +1,16 @@
 export const destinations = [
     {
-      name: 'Santorini, Greece',
-      image: 'img/santorini.jpg',
-      description: 'Famous for its white-washed buildings, stunning sunsets, and crystal-clear waters.',
+      name: 'Stari Bar, Montenegro',
+      image: 'img/stari-bar/stari-bar.jpg',
+      description: 'The Old Town of Bar in Montenegro, known as Stari Bar, may lie in ruins – but it still has plenty of stories to share with visitors.',
       content: [
-        'Santorini is known for its beautiful white-washed buildings overlooking the Aegean Sea.',
-        'The island offers stunning views, particularly at sunset from the town of Oia.',
-        'It is a top destination for honeymooners and travelers looking for a romantic escape.'
+        'The old town of Stari Bar, in the southeast of Montenegro, has seen its fair share of troubles. Over the centuries it was taken over by the Venetians, the Serbians, the Hungarians and the Ottoman Empire.',
+        'For visitors, the most important part of the old town is the Stari Bar Fortress. You won’t miss it from the outside, with its large imposing stone walls and sturdy round turrets at the corners',
+        'Head inside and everything suddenly gets much quieter. You don’t have the shops and the stalls here.'
       ],
       images: [
-        { src: 'img/santorini.jpg', alt: 'Santorini', className: 'post__data-img' },
-        { src: 'img/santorini2.jpg', alt: 'Santorini Sunset', className: 'post__data-img' },
+        { src: 'img/stari-bar/stari-bar-1.jpg', alt: 'Santorini', className: 'post__data-img' },
+        { src: 'img/stari-bar/stari-bar-2.jpg', alt: 'Santorini Sunset', className: 'post__data-img' },
       ]
     },
     {
@@ -41,5 +41,5 @@ export const destinations = [
           { src: '/travel-blog-react/img/kas/kas-photo-3.jpg', alt: 'Kyoto Temple', className: 'post__data-img' },
         ]
       },
-    // Add more destinations...ы
+    // Add more destinations...
   ];
