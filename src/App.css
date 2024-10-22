@@ -39,7 +39,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   /* text-align: center; */
   color: white;
 }
@@ -55,14 +55,6 @@
   display: grid;
   gap: 1.5rem;
 }
-
-
-
-/* .journal {
-  display: flex;
-  padding: 50px;
-} */
-
 
 .logo {
   height: 6em;
@@ -80,6 +72,14 @@
 
 body {
   background-color: var(--body-color);
+  margin: 0;
+}
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: #666;
 }
 
 @keyframes logo-spin {

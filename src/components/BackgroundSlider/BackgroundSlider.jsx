@@ -34,7 +34,7 @@ const BackgroundSlider = () => {
   }, []);
 
   return (
-    <section className="home section" id="home">
+    <section className="home" id="home">
       <div
         className="home__bg"
         id="home-bg"
@@ -43,15 +43,16 @@ const BackgroundSlider = () => {
       <div className="home__shadow"></div>
       <div className="home__container container grid">
         <div className="home__data">
-          <h3 className="home__subtitle">Welcome To Travel</h3>
+          <h3 className="home__subtitle"> </h3>
           <h1 className="home__title">
-            Explore <br />
-            The World
+              Hi, I'm Elena!<br></br>
+              Welcome to my blog!
           </h1>
           <p className="home__description">
-            Live the trips exploring the world, discover paradises, islands, mountains, and much
-            more. Get your trip now.
+            I’m so glad you’re here! 
           </p>
+          <p className="home__description">Let's explore this world together, find the best beaches, mysterious islands, and just spend quality time together.
+            Feel at home!</p>
           {/* <a href="/countries" className="button">
             All Countries <i className="ri-arrow-right-line"></i>
           </a> */}

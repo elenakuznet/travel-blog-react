@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "popular", element: <Popular /> },
       { path: "popular/:index", element: <PopularPost /> },  // Dynamic route for PopularPost
-      // { path: "home/:index", element: <PopularPost />},
+      { path: "home/:index", element: <PopularPost />},
       { path: "explore", element: <Explore /> },
     ],
   },

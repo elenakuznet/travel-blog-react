@@ -30,22 +30,26 @@ const Header = () => {
         <div className={`nav__menu ${menuOpen ? "nav__menu--open" : ""}`}>
           <ul className="nav__list">
             <li className="nav__item">
-              <NavLink to="/travel-blog-react" className="nav__link"  onClick={closeMenu}>
+              <NavLink 
+                to="/travel-blog-react" 
+                className={({ isActive }) => (isActive ? "nav__link active" : "nav__link")}
+                onClick={closeMenu}
+                end >
                 Home
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/travel-blog-react/about"  className={({ isActive }) => (isActive ? "nav__link active__link" : "nav__link")} onClick={closeMenu}>
+              <NavLink to="/travel-blog-react/about"  className={({ isActive }) => (isActive ? "nav__link active" : "nav__link")} onClick={closeMenu}>
                 About
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/travel-blog-react/popular" className={({ isActive }) => (isActive ? "nav__link active__link" : "nav__link")} onClick={closeMenu}>
+              <NavLink to="/travel-blog-react/popular" className={({ isActive }) => (isActive ? "nav__link active" : "nav__link")} onClick={closeMenu}>
                 Popular
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/travel-blog-react/explore" className={({ isActive }) => (isActive ? "nav__link active__link" : "nav__link")} onClick={closeMenu}>
+              <NavLink to="/travel-blog-react/explore" className={({ isActive }) => (isActive ? "nav__link active" : "nav__link")} onClick={closeMenu}>
                 Explore
               </NavLink>
             </li>

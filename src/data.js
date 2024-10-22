@@ -9,24 +9,10 @@ export const destinations = [
         'Head inside and everything suddenly gets much quieter. You don’t have the shops and the stalls here.'
       ],
       images: [
-        { src: 'img/stari-bar/stari-bar-1.jpg', alt: 'Santorini', className: 'post__data-img' },
-        { src: 'img/stari-bar/stari-bar-2.jpg', alt: 'Santorini Sunset', className: 'post__data-img' },
+        { src: '/travel-blog-react/img/stari-bar/stari-bar-1.jpg', alt: 'Santorini', className: 'post__data-img' },
+        { src: '/travel-blog-react/img/stari-bar/stari-bar-2.jpg', alt: 'Santorini Sunset', className: 'post__data-img' },
       ]
-    },
-    {
-      name: 'Kyoto, Japan',
-      image: 'img/kyoto.jpg',
-      description: 'Explore traditional temples, gardens, and the beauty of cherry blossoms.',
-      content: [
-        'Kyoto is the cultural heart of Japan, known for its classical Buddhist temples.',
-        'Visitors can explore the stunning Arashiyama Bamboo Grove and enjoy seasonal cherry blossoms.',
-        'Kyoto’s rich history is evident in every corner, from the Gion district to the Kyoto Imperial Palace.'
-      ],
-      images: [
-        { src: 'img/kyoto.jpg', alt: 'Kyoto', className: 'post__data-img' },
-        { src: 'img/kyoto2.jpg', alt: 'Kyoto Temple', className: 'post__data-img' },
-      ]
-    },
+    }, 
     {
         name: 'Kas, Türkiye',
         image: 'img/kas/kas-photo-7.jpg',
@@ -41,5 +27,62 @@ export const destinations = [
           { src: '/travel-blog-react/img/kas/kas-photo-3.jpg', alt: 'Kyoto Temple', className: 'post__data-img' },
         ]
       },
+    {
+      name: 'Cameron Highlands Resort, Malaysia',
+      image: 'img/cameron/cameron.jpeg',
+      description: 'Cameron Highlands was named after William Cameron, a British Government surveyor who discovered it in 1885 on a mapping expedition but failed to mark his discovery.',
+      content: [
+        'Set 1,500 metres above sea level in a forested mountainscape, Cameron Highlands Resort is built as a long extension from an existing 1930s cottage with architecture dating from the 1970s.',
+        'Promising splendour, romance and nostalgia, the interiors hark back to its grand colonial heritage with tall French doors, timber-beamed ceilings and plantation shutters combined with the colours and textures of Jim Thompson’s famed Asian silks.',
+        'This is mirrored in the friendly service, where traditional English charm merges seamlessly with discreet Asian hospitality.'
+      ],
+      images: [
+        { src: '/travel-blog-react/img/cameron/cameron-1.jpeg', alt: 'Kyoto', className: 'post__data-img' },
+        { src: '/travel-blog-react/img/cameron/cameron-2.jpg', alt: 'Kyoto Temple', className: 'post__data-img' },
+      ]
+    },
+    {
+      name: 'Cameron Highlands Resort, Malaysia',
+      image: 'img/kyoto.jpg',
+      description: 'Cameron Highlands was named after William Cameron, a British Government surveyor who discovered it in 1885 on a mapping expedition but failed to mark his discovery.',
+      content: [
+        'Set 1,500 metres above sea level in a forested mountainscape, Cameron Highlands Resort is built as a long extension from an existing 1930s cottage with architecture dating from the 1970s.',
+        'Promising splendour, romance and nostalgia, the interiors hark back to its grand colonial heritage with tall French doors, timber-beamed ceilings and plantation shutters combined with the colours and textures of Jim Thompson’s famed Asian silks.',
+        'This is mirrored in the friendly service, where traditional English charm merges seamlessly with discreet Asian hospitality.'
+      ],
+      images: [
+        { src: 'img/kyoto.jpg', alt: 'Kyoto', className: 'post__data-img' },
+        { src: 'img/kyoto2.jpg', alt: 'Kyoto Temple', className: 'post__data-img' },
+      ]
+    },
+    {
+      name: 'Cameron Highlands Resort, Malaysia',
+      image: 'img/kyoto.jpg',
+      description: 'Cameron Highlands was named after William Cameron, a British Government surveyor who discovered it in 1885 on a mapping expedition but failed to mark his discovery.',
+      content: [
+        'Set 1,500 metres above sea level in a forested mountainscape, Cameron Highlands Resort is built as a long extension from an existing 1930s cottage with architecture dating from the 1970s.',
+        'Promising splendour, romance and nostalgia, the interiors hark back to its grand colonial heritage with tall French doors, timber-beamed ceilings and plantation shutters combined with the colours and textures of Jim Thompson’s famed Asian silks.',
+        'This is mirrored in the friendly service, where traditional English charm merges seamlessly with discreet Asian hospitality.'
+      ],
+      images: [
+        { src: 'img/kyoto.jpg', alt: 'Kyoto', className: 'post__data-img' },
+        { src: 'img/kyoto2.jpg', alt: 'Kyoto Temple', className: 'post__data-img' },
+      ]
+    },
+    {
+      name: 'Cameron Highlands Resort, Malaysia',
+      image: 'img/kyoto.jpg',
+      description: 'Cameron Highlands was named after William Cameron, a British Government surveyor who discovered it in 1885 on a mapping expedition but failed to mark his discovery.',
+      content: [
+        'Set 1,500 metres above sea level in a forested mountainscape, Cameron Highlands Resort is built as a long extension from an existing 1930s cottage with architecture dating from the 1970s.',
+        'Promising splendour, romance and nostalgia, the interiors hark back to its grand colonial heritage with tall French doors, timber-beamed ceilings and plantation shutters combined with the colours and textures of Jim Thompson’s famed Asian silks.',
+        'This is mirrored in the friendly service, where traditional English charm merges seamlessly with discreet Asian hospitality.'
+      ],
+      images: [
+        { src: 'img/kyoto.jpg', alt: 'Kyoto', className: 'post__data-img' },
+        { src: 'img/kyoto2.jpg', alt: 'Kyoto Temple', className: 'post__data-img' },
+      ]
+    },
+   
     // Add more destinations...
   ];

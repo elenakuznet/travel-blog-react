@@ -3,6 +3,7 @@
     position: relative;
     height: 100vh;
     overflow: hidden;
+    margin-bottom: 70px;
 }
 
 .home__bg {
