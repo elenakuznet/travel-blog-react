@@ -43,16 +43,19 @@ const BackgroundSlider = () => {
       <div className="home__shadow"></div>
       <div className="home__container container grid">
         <div className="home__data">
-          <h3 className="home__subtitle"> </h3>
+          {/* <h3 className="home__subtitle"> Welcome to my blog!</h3> */}
           <h1 className="home__title">
               Hi, I'm Elena!<br></br>
-              Welcome to my blog!
+              
           </h1>
           <p className="home__description">
-            I’m so glad you’re here! 
+            Welcome to my blog!
+            {/* I’m so glad you’re here!  */}
           </p>
-          <p className="home__description">Let's explore this world together, find the best beaches, mysterious islands, and just spend quality time together.
-            Feel at home!</p>
+          <p className="home__description">Let's explore this world together, 
+          find the best beaches, 
+          <br></br>mysterious islands, and just spend quality time together.
+            Feel at home!&#128154;</p>
           {/* <a href="/countries" className="button">
             All Countries <i className="ri-arrow-right-line"></i>
           </a> */}

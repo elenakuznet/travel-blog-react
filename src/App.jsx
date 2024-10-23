@@ -6,12 +6,17 @@ import Subscription from './components/Subscription/Subscription';
 
 function App() {
   return (
+    
     <div className="app">
-      <Header />
-        <Outlet/>
-        <Subscription/>
+      <div className='container'>
+        <Header />
+          <Outlet/>
+          <Subscription/>
+        
+      </div>
       <Footer />
     </div>
+    
   );
 }
 

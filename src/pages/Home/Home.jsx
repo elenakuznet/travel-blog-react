@@ -16,7 +16,7 @@ function Home() {
 
       <Posts></Posts>
       
-      <InteractiveMap />
+      {/* <InteractiveMap /> */}
       {/* <Subscription/> */}
     </div>
   );

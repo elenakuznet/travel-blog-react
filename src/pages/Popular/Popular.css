@@ -9,6 +9,17 @@
   margin-bottom: 2rem;  /* Space between the title and the cards */
 }
 
+.popular__search {
+  padding: 1rem 1.25rem;
+  background-color: var(--container-color);
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.popular__search::placeholder {
+  color: white;
+}
+
 .popular__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);  /* Four columns */

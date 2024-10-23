@@ -20,8 +20,8 @@ const posts = [
 
 const Posts = () => {
     return (
-        <section>
-            <h2>My recent adventures</h2>
+        <section className='section'>
+            <h2 className='section__title'>My recent adventures</h2>
             <div className="posts__container grid">
                 {posts.map((post, index) => (
                     <NavLink to={`/travel-blog-react/popular/${index}`} key={index}
@@ -36,7 +36,6 @@ const Posts = () => {
                                 <img src={post.imageUrl} alt={post.title} className="post__img" />
                             </div>
                         </div>
-                        
                     </NavLink>
                 ))}
             </div>

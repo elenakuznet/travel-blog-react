@@ -6,9 +6,17 @@
 
 .subscription {
     display: grid;
+    /* grid-template-columns: 460px 340px; */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    column-gap: 4.5rem;
+    row-gap: 2.5rem; */
     grid-template-columns: 460px 340px;
     column-gap: 8.5rem;
-    padding-block: 1rem 5rem;
+    /* padding-block: 1rem 5rem; */
+}
+
+.subscription__title {
+    margin-bottom: 1.5rem;
 }
 
 .subscription__image {
@@ -16,7 +24,6 @@
     justify-self: center;
     overflow: hidden;
     border-radius: 10px;
-
 }
 
 .subscription__img {
@@ -25,8 +32,6 @@
     transition: transform .4s;
     border-radius: 10px;
 }
-
-
 
 .form {
     display: flex;
@@ -38,4 +43,26 @@
     padding: 1rem 1.25rem;
     background-color: var(--container-color);
     border: none;
+}
+
+@media (max-width: 1023px) {
+    .subscription {
+        grid-template-columns: repeat(2, 350px);
+        column-gap: 2rem;
+        row-gap: 2rem;
+    
+    }
+}
+
+@media (max-width: 768px) {
+    .subscription {
+        grid-template-columns: 380px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscription {
+        grid-template-columns: 300px;
+    }
 }

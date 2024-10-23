@@ -25,7 +25,7 @@ function Popular() {
         placeholder="Search destinations..."
         value={searchQuery}
         onChange={handleSearchChange}
-        className="search-input"
+        className="popular__search"
       />
       <h2 className="section__title">Popular Destinations</h2>
       <div className="popular__container container grid">

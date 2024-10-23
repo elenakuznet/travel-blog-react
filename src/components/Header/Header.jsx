@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <nav className="nav container">
+      <nav className="nav">
         {/* Logo */}
         <NavLink to="/travel-blog-react" className="nav__logo" onClick={closeMenu}>
           Travel with me

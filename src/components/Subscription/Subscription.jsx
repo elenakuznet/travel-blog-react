@@ -11,34 +11,36 @@ const Subscription = () => {
         alert('Thank you for subscribing!');
     }
 
-
     return (
-        <div className="subscription">
-        <div className="subscription__image">
-          <img src="/travel-blog-react/img/subscription.jpg" className="subscription__img" alt="Emily traveling" />
-        </div>
-        
-        <div className="subscription__content">
-            <h2>Subscribe to Newsletter</h2>
-            <form className="form" onSubmit={handleSubmit(onSubmit)}>
-                <input 
-                    className="input-email"
-                    type="email"
-                    placeholder="Enter your email" 
-                    { ...register('email', {
-                        required: 'Email is required',
-                        pattern: {
-                            value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                            message: 'Please enter a valid email address'
-                        }
-                    })}/>
-                    {errors.email && <p style={{color: 'red'}}>{errors.email.message}</p>}
-                {/* <button type="submit">Send</button> */}
-                <Button type="submit">Send</Button>
-            </form> 
+        <section className="section">
+            <div className="subscription">
+                <div className="subscription__image">
+                <img src="/travel-blog-react/img/subscription.jpg" className="subscription__img" alt="Emily traveling" />
+                </div>
+                
+                <div className="subscription__content">
+                    <h2 className="subscription__title">Subscribe to Newsletter</h2>
+                    <form className="form" onSubmit={handleSubmit(onSubmit)}>
+                        <input 
+                            className="input-email"
+                            type="email"
+                            placeholder="Enter your email" 
+                            { ...register('email', {
+                                required: 'Email is required',
+                                pattern: {
+                                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                    message: 'Please enter a valid email address'
+                                }
+                            })}/>
+                            {errors.email && <p style={{color: 'red'}}>{errors.email.message}</p>}
+                        {/* <button type="submit">Send</button> */}
+                        <Button type="submit">Send</Button>
+                    </form> 
+                    </div>
+                    
             </div>
-            
-         </div>
+        </section>
+        
     )
 }
 

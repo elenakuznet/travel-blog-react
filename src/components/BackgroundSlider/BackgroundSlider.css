@@ -35,6 +35,16 @@
     color: white;
 }
 
+.home__title {
+    font-size: var(--h1-font-size);
+    /* font-size: 3rem; */
+    margin-bottom: 1rem;
+}
+
+.home__description {
+    font-size: var(--h3-font-size);
+}
+
 .slider-btn {
     position: absolute;
     top: 50%;
@@ -54,4 +64,11 @@
 
 #nextBtn {
     right: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .slider-btn {
+        display: none;
+    }
 }

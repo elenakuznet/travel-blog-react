@@ -18,6 +18,7 @@
   --body-font: "Poppins", sans-serif;
   --second-font: "Montserrat", sans-serif;
   --biggest-font-size: 2.75rem;
+  
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -36,17 +37,71 @@
 }
 
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  /* padding: 2rem; */
-  /* text-align: center; */
-  color: white;
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1152px) {
+  :root {
+    --biggest-font-size: 5.5rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
 }
 
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
 .app {
-  /* display: flex;
-  padding: 30px; */
   font-family: var(--body-font);
 }
 
@@ -74,6 +129,24 @@ body {
   background-color: var(--body-color);
   margin: 0;
 }
+
+.container {
+  max-width: 1440px;  /* Limits the width of your blog */
+  width: 100%;  /* Ensures the container takes full width until max-width is reached */
+  margin: 0 auto;  /* Centers the container */
+  padding: 0 20px;  /* Optional: Adds padding for small screens */
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.5rem;
+}
+
+
 
 a.text:active, /* активная/посещенная ссылка */
 a.text:hover,  /* при наведении */
@@ -103,4 +176,20 @@ a.text {
 
 .read-the-docs {
   color: #888;
+}
+
+
+@media (max-width: 1475px) {
+  .container {
+    max-width: 1200px;  /* Limits the width of your blog */
+    width: 100%;  /* Ensures the container takes full width until max-width is reached */
+    margin: 0 auto;  /* Centers the container */
+    padding: 0 25px;  /* Optional: Adds padding for small screens */
+  }
+}
+
+@media (max-width: 1023px) {
+  .section {
+    padding: 20px 0;
+  }
 }
