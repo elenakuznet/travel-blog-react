@@ -22,12 +22,6 @@
   text-decoration: none;
 }
 
-.nav__toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #ffffff; /* White icon for toggle button */
-}
 
 /* Nav Menu Styles for Desktop */
 .nav__menu {
@@ -59,6 +53,11 @@
   color: var(--text-color); /* Highlight color for active or hover */
 }
 
+.nav__toggle, 
+.nav__close {
+  display: none;
+}
+
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
   .header {
@@ -77,13 +76,15 @@
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 250px;
+    /* height: 100vh; */
+    width: 100%;
+    padding: 4rem 0;
+    /* width: 250px; */
     background-color: #333333; /* Slightly lighter dark background for the mobile menu */
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -104,10 +105,24 @@
     font-size: 1.2rem;
   }
 
+.nav__toggle, 
+.nav__close {
+  display: flex;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
   .nav__close {
-    display: block;
+    /* display: block;
     font-size: 1.8rem;
     cursor: pointer;
-    margin: 20px;
+    margin: 20px; */
+        display: flex;
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
   }
 }

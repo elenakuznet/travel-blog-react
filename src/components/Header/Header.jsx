@@ -17,7 +17,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav">
         {/* Logo */}
-        <NavLink to="/travel-blog-react" className="nav__logo" onClick={closeMenu}>
+        <NavLink to="/travel-blog-react" className="nav__logo">
           Travel with me
         </NavLink>
 
@@ -34,7 +34,7 @@ const Header = () => {
                 to="/travel-blog-react" 
                 className={({ isActive }) => (isActive ? "nav__link active" : "nav__link")}
                 onClick={closeMenu}
-                end >
+                end>
                 Home
               </NavLink>
             </li>
@@ -54,6 +54,13 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
+
+          {/* Close Icon (ri-close-line) when the menu is open */}
+          {menuOpen && (
+            <div className="nav__close" onClick={closeMenu}>
+              <i className="ri-close-line"></i>
+            </div>
+          )}
         </div>
       </nav>
     </header>
