@@ -30,7 +30,7 @@ const Posts = () => {
                             <div className="post__data">
                                 <h3 className="post__title">{post.title}</h3>
                                 <p className="post__description">{post.description}</p>
-                                <Button>Find out more</Button>
+                                <Button>Find out more <i class="ri-arrow-right-line"></i></Button>
                             </div>
                             <div className="post__image">
                                 <img src={post.imageUrl} alt={post.title} className="post__img" />

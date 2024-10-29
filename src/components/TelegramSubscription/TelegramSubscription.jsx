@@ -14,7 +14,7 @@ const TelegramSubscription = () => {
             Get exclusive updates and news directly in your Telegram.
             </p>
             <Button className='button telegram-subscription__button' onClick={handleSubscribeClick}>
-           Subscribe
+           Subscribe <i class="ri-telegram-2-line"></i>
             </Button>
             
         </div>

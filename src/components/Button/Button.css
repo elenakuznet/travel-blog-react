@@ -1,5 +1,6 @@
 .button {
-    background-color: hsla(0, 0%, 100%, .2);
+    /* background-color: hsla(0, 0%, 100%, .2); */
+    background-color: var(--button-bg);
     padding: 1.25rem 1.5rem;
     color: var(--title-color);
     display: inline-flex;

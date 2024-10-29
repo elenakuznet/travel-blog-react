@@ -1,6 +1,5 @@
 .header {
   background-color: var(--body-color);
-  /* padding: 20px; */
   padding: 25px 0 25px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -18,7 +17,7 @@
 .nav__logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ffffff; 
+  color: var(--title-color); 
   text-decoration: none;
 }
 
@@ -43,7 +42,7 @@
 
 .nav__link {
   font-size: var(--h2-font-size);
-  color: #ffffff; /* White text for links */
+  color: var(--title-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }

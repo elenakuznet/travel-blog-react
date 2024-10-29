@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';  
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,11 +16,12 @@ const Header = () => {
 
   return (
     <header className="header">
-      <nav className="nav">
+      <nav className="nav container">
         {/* Logo */}
         <NavLink to="/travel-blog-react" className="nav__logo">
           Travel with me
         </NavLink>
+        <ThemeToggle></ThemeToggle>
 
         {/* Menu Toggle Button */}
         <div className="nav__toggle" onClick={toggleMenu}>

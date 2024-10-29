@@ -34,7 +34,7 @@ const Subscription = () => {
                             })}/>
                             {errors.email && <p style={{color: 'red'}}>{errors.email.message}</p>}
                         {/* <button type="submit">Send</button> */}
-                        <Button type="submit">Send</Button>
+                        <Button type="submit">Subscribe to Newsletter</Button>
                     </form> 
                     </div>
                     
