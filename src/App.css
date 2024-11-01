@@ -39,15 +39,6 @@
   --z-fixed: 100;
 }
 
-/* Light theme */
-/* [data-theme="light"] {
-  --title-color: hsl(0, 0%, 10%);
-  --text-color: hsl(0, 0%, 30%);
-  --text-color-light: hsl(0, 0%, 50%);
-  --body-color: hsl(0, 0%, 100%);
-  --container-color: hsl(0, 0%, 90%);
-  --button-bg: hsla(0, 3%, 15%, 0.2);;
-} */
 
 
 [data-theme="light"] {

@@ -31,20 +31,16 @@
 .about__description {
     font-size: var(--normal-font-size);
     line-height: 1.6;
-    margin-bottom: 2rem;
     color: var(--text-color-light);
+    margin-bottom: 2rem;
 }
-  
-  .about__image {
+
+.about__image {
     position: relative;
     justify-self: center;
     overflow: hidden;
     border-radius: 10px;
-    /* max-width: 500px;
-    max-height: 500px;
-    object-fit: cover; */
-
-  }
+}
 
   .about__content {
     display: grid;
