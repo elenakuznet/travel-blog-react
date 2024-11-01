@@ -1,0 +1,43 @@
+.explore {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.explore__title {
+    text-align: center;
+}
+
+
+.globe-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+  
+  /* .spin-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .spin-btn:hover {
+    background-color: #005f7f;
+  }
+  
+  .spin-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  } */
+  
+
+.destination {
+    font-size: var(--h1-font-size);
+}
