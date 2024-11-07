@@ -1,41 +1,43 @@
 import { useParams } from 'react-router-dom';
-import { destinations } from '../../data'; // Import the destinations array
-import './PopularPost.css';
-import BucketList from '../BucketList/BucketList';
+import { destinations } from '../../data';
+import styles from './PopularPost.module.css';
+// import './PopularPost.css';
 
 const PopularPost = () => {
-
-
-  const { index } = useParams();  // Get the index from the URL
-  const destination = destinations[index];  // Look up the destination
+  const { index } = useParams();
+  const destination = destinations[index];
 
   if (!destination) {
     return <p>Destination not found.</p>;
   }
 
   return (
-    <div className="post">
-      <h1 className="post__title">{destination.name}</h1>
-      {/* <BucketList /> */}
-      
-      {/* Render each paragraph of content */}
-      {destination.content.map((paragraph, idx) => (
-        <p key={idx} className="post__content">
-          {paragraph}
-        </p>
-      ))}
+    <div className={styles['post']}>
+      <h1 className={styles['post__title']}>{destination.name}</h1>
 
-      {/* Render each image */}
-      {destination.images.map((image, idx) => (
-        <img 
-          key={idx} 
-          src={image.src} 
-          alt={image.alt || destination.name} 
-          className={image.className || "post__data-img"} 
-        />
-      ))}
+      {/* Introduction Section */}
+      <section className={styles['post__section']}>
+        <p className={styles['post__intro']}>{destination.intro}</p>
+      </section>
+
+      {/* Side-by-Side Layout for Content */}
+      <section className={styles['post__section']}>
+        {destination.content.map((paragraph, idx) => (
+          <div key={idx} className={`${styles['post__row']} ${idx % 2 === 0 ? styles['row-reverse'] : ''}`}>
+            <p className={styles['post__content']}>{paragraph}</p>
+            {destination.images[idx] && (
+              <img
+                src={destination.images[idx].src}
+                alt={destination.images[idx].alt || destination.name}
+                className={styles['post__image']}
+              />
+            )}
+          </div>
+        ))}
+      </section>
     </div>
   );
 };
 
 export default PopularPost;
+
