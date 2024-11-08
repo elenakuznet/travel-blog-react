@@ -11,7 +11,7 @@ const About = () => {
         
         <div className={styles['about__content']}>
           <div className={styles['about__image']}>
-            <img src="/travel-blog-react/img/about/about.jpeg" className={styles['about__img']} alt="Elena traveling" />
+            <img src="/travel-blog-react/img/about/about-2.JPG" className={styles['about__img']} alt="Elena traveling" />
           </div>
           
           <div className={styles['about__text']}>

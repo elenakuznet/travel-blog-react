@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import './Header.css';  
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import Logo from '../Logo/Logo';
+import NavigationLinks from '../NavigationLinks/NavigationLinks';
+import MenuToggle from '../MenuToggle/MenuToggle';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,45 +19,16 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        {/* Logo */}
-        <NavLink to="/travel-blog-react" className="nav__logo">
-          Travel with me
-        </NavLink>
+
+        <Logo/>
+      
         <ThemeToggle></ThemeToggle>
 
-        {/* Menu Toggle Button */}
-        <div className="nav__toggle" onClick={toggleMenu}>
-          <i className={menuOpen ? "ri-close-line" : "ri-menu-line"}></i>
-        </div>
+        <MenuToggle isOpen={menuOpen} toggleMenu={toggleMenu}/>
 
         {/* Nav Menu */}
         <div className={`nav__menu ${menuOpen ? "nav__menu--open" : ""}`}>
-          <ul className="nav__list">
-            <li className="nav__item">
-              <NavLink 
-                to="/travel-blog-react" 
-                className={({ isActive }) => (isActive ? "nav__link active" : "nav__link")}
-                onClick={closeMenu}
-                end>
-                Home
-              </NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/travel-blog-react/about"  className={({ isActive }) => (isActive ? "nav__link active" : "nav__link")} onClick={closeMenu}>
-                About
-              </NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/travel-blog-react/popular" className={({ isActive }) => (isActive ? "nav__link active" : "nav__link")} onClick={closeMenu}>
-                Popular
-              </NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/travel-blog-react/explore" className={({ isActive }) => (isActive ? "nav__link active" : "nav__link")} onClick={closeMenu}>
-                Explore
-              </NavLink>
-            </li>
-          </ul>
+          <NavigationLinks closeMenu={closeMenu} />
 
           {/* Close Icon (ri-close-line) when the menu is open */}
           {menuOpen && (
@@ -63,6 +36,7 @@ const Header = () => {
               <i className="ri-close-line"></i>
             </div>
           )}
+          
         </div>
       </nav>
     </header>

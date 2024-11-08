@@ -1,0 +1,22 @@
+.post__row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.post__content {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    color: var(--text-color);
+}
+
+.post__image {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+}

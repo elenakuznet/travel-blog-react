@@ -1,0 +1,6 @@
+.nav__logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--title-color); 
+    text-decoration: none;
+}

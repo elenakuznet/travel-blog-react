@@ -3,7 +3,7 @@ export const destinations = [
       name: 'Stari Bar, Montenegro',
       intro: 'A true monument of Montenegrin history and rich culture is Stari Bar. ',
       image: 'img/stari-bar/stari-bar.jpg',
-      // description: 'The Old Town of Bar in Montenegro, known as Stari Bar, may lie in ruins – but it still has plenty of stories to share with visitors.',
+      description: 'The Old Town of Bar in Montenegro, known as Stari Bar, may lie in ruins – but it still has plenty of stories to share with visitors.',
       content: [
         'Many civilizations left traces around the historical site of Stari Bar, which serves as proof of past times. Stari Bar was founded by Illyrians, while it was also a proud home to the Romans, Byzantines, Venetians, and Ottomans. The Old Town of Bar nowadays has stable walls and the ruins of numerous significant buildings that speak tales to its visitors. Though now partially in ruins, many parts of the Stari Bar were renovated and now feature stores, restaurants, and a very popular marketplace. In this historic town, you will see what was left of this cultural center, with churches, towers, the homes of nobles, and a stunning fortress that will captivate you.',
         'Stari Bar has an astonishing array of building styles. Its multiethnic past is reflected in the harmonious coexistence of churches, mosques, and fortifications. Earthquakes, wars, and restorations have shaped the town throughout time, however, it’s core characteristics and allure remain, which you can witness on every corner.',
@@ -19,7 +19,7 @@ export const destinations = [
         name: 'Kas, Türkiye',
         image: 'img/kas/kas-photo-7.jpg',
         intro: 'A lovely tangle of mellow bars, markets and beach clubs, Kaş is the jewel of the Turquoise Coast',
-        // description: 'All the trips around the world are a great',
+        description: 'All the trips around the world are a great',
         content: [
           'Kas (pronounced Kash) is a small fishing village and tourist town located 170 kms west of Antalya. Built on a hill running down to the Mediterranean Sea, it has hot dry summers and mild winters which makes it ideal for growing fruit and vegetables. Although it is still a source of agriculture, tourism now provides its main income.',
           'The island’s size makes it easy to explore in a few hours – boat taxis leave from the harbour for Aya Georgio beach and the spectacular Blue Cave – although I rarely do much but potter between the neoclassical mansions that line the harbour, pristine in shades of duck-egg blue and butter yellow. Lunch is inevitably a long, slow affair, taken at one of the waterfront restaurants – a little pricier than those in the backstreets, but worth it for the view back across to the rooftops of Kaş, clustered on the other side of the water.',
