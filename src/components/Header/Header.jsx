@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';  
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
-import Logo from '../Logo/Logo';
+import Logo from '../shared/Logo/Logo';
 import NavigationLinks from '../NavigationLinks/NavigationLinks';
 import MenuToggle from '../MenuToggle/MenuToggle';
 

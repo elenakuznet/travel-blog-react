@@ -5,7 +5,7 @@ const PostImage = ({ src, alt, className}) => {
         <img 
             src={src}
             alt={alt || 'Travel blog image'}
-            className={`${styles['post__image']} ${className || ''}`} // Allows custom styling}
+            className={`${styles['post__image']} ${className || ''}`}
         />
     )
 }

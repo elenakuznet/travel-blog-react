@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { destinations } from '../../data'; // Import the destinations array
+import SearchBar from '../../components/SearchBar/SearchBar';
 import './Popular.css';
 
+
 function Popular() {
+
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearchChange = (event) => {
@@ -20,13 +23,22 @@ function Popular() {
 
   return (
     <section className="popular section">
-      <input
+      {/* <input
         type="text"
         placeholder="Search destinations..."
         value={searchQuery}
         onChange={handleSearchChange}
         className="popular__search"
+      /> */}
+      <SearchBar  
+          value={searchQuery} 
+          onChange={handleSearchChange} 
+          placeholder="Search destinations..." 
+
       />
+
+  
+
       <h2 className="section__title">Popular Destinations</h2>
       <div className="popular__container container grid">
         {destinationsToDisplay.map((destination, index) => (

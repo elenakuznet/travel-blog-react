@@ -41,11 +41,9 @@
 .footer__link:hover,
 .footer__link.active {
   color: var(--text-color); /* Highlight color for active or hover */
-}
+} 
   
-/* .footer__link:hover {
-    color: #f0a500; 
-}  */
+
   
   .footer__socials {
     display: flex;
@@ -61,7 +59,7 @@
   }
   
   .footer__social:hover {
-    color: var(--text-color); /* Highlight color for active or hover */
+    color: var(--text-color);
   }
   
   /* Responsive footer */
@@ -71,7 +69,7 @@
       gap: 1rem;
     }
   
-    .footer__socials {
+    /* .footer__socials {
       justify-content: center;
-    }
+    } */
   }

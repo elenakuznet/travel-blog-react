@@ -15,8 +15,13 @@
     color: var(--text-color);
 }
 
-.post__image {
-    max-width: 45%;
-    height: auto;
-    border-radius: 8px;
+
+@media (max-width: 1024px) {
+    .post__row {
+        flex-direction: column;
+    }
+    
+    .row-reverse {
+        flex-direction: column;
+    }
 }

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Lottie from 'lottie-react'; // Use Lottie instead of Player
 import './Explore.css';
 import globeAnimation from '../../assets/globe-animation-2.json'; // Make sure this path is correct
-import Button from '../../components/Button/Button';
+import Button from '../../components/shared/Button/Button';
 
 const destinations = ['Paris', 'Tokyo', 'New York', 'Rome', 'Sydney', 'Bali', 'Cairo', 'Barcelona'];
 

@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import './Subscription.css';
-import Button from "../Button/Button";
+import Button from "../shared/Button/Button";
 
 const Subscription = () => {
 

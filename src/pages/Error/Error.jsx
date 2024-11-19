@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Error.module.css";
-import Button from "../../components/Button/Button";
+import Button from "../../components/shared/Button/Button";
 
 const Error = () => {
     return (

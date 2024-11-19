@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import './index.css';
+import './styles/index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Loader from './components/Loader/Loader.jsx';
 import Error from './pages/Error/Error.jsx';
@@ -68,10 +68,6 @@ const router = createBrowserRouter([
           </Suspense>
         ) 
       },
-      // {
-      //   path: "*",
-      //   element: <Error/>
-      // }
     ],
   },
 ]);

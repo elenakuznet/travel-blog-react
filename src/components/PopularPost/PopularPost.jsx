@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { destinations } from '../../data';
 import styles from './PopularPost.module.css';
-import PostTitle from '../PostTitle/PostTitle';
-import PostIntro from '../PostIntro/PostIntro';
-import PostLayout from '../PostLayout/PostLayout';
+import PostTitle from '../post/PostTitle/PostTitle';
+import PostIntro from '../post/PostIntro/PostIntro';
+import PostLayout from '../post/PostLayout/PostLayout';
 
 const PopularPost = () => {
   const { index } = useParams();

@@ -9,7 +9,7 @@
   margin-bottom: 2rem;  /* Space between the title and the cards */
 }
 
-.popular__search {
+/* .popular__search {
   padding: 1rem 1.25rem;
   background-color: var(--container-color);
   border: none;
@@ -18,7 +18,7 @@
 
 .popular__search::placeholder {
   color: white;
-}
+} */
 
 .popular__container {
   display: grid;

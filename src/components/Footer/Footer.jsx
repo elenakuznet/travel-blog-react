@@ -1,6 +1,6 @@
-
-import { NavLink } from 'react-router-dom';
 import './Footer.css';
+import FooterLink from '../FooterLink/FooterLink';
+import FooterSocialIcon from '../FooterSocialIcon/FooterSocialIcon';
 
 const Footer = () => {
   return (
@@ -14,7 +14,11 @@ const Footer = () => {
           {/* <li>
             <a href="#home" className="footer__link">Home</a>
           </li> */}
-          <li>
+          <FooterLink to="/travel-blog-react" label="Home"/> 
+          <FooterLink to="/travel-blog-react/about" label="About" />
+          <FooterLink to="/travel-blog-react/popular" label="Popular" />
+          <FooterLink to="/travel-blog-react/explore" label="Explore" />
+          {/* <li>
             <NavLink to="/travel-blog-react" className="footer__link" end>Home</NavLink>
           </li>
           
@@ -28,19 +32,13 @@ const Footer = () => {
 
           <li>
             <NavLink to="/travel-blog-react/explore" className="footer__link">Explore</NavLink>
-          </li>
+          </li> */}
         </ul>
 
         <div className="footer__socials">
-          <a href="https://t.me/comewithmetravel" target="_blank" className="footer__social">
-            <i class="ri-telegram-line"></i>
-          </a>
-          <a href="#" className="footer__social">
-            <i className="ri-instagram-line"></i>
-          </a>
-          <a href="#" className="footer__social">
-            <i className="ri-twitter-line"></i>
-          </a>
+          <FooterSocialIcon href="https://t.me/comewithmetravel" iconClass="ri-telegram-line"/>
+          <FooterSocialIcon href="#" iconClass="ri-instagram-line"/>
+          <FooterSocialIcon href="#" iconClass="ri-twitter-line"/> 
         </div>
       </div>
     </footer>

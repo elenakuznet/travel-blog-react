@@ -1,6 +1,6 @@
 import React from 'react';
 import './TelegramSubscription.css';  // Add your styles here
-import Button from '../Button/Button';
+import Button from '../shared/Button/Button';
 
 const TelegramSubscription = () => {
     const handleSubscribeClick = () => {
