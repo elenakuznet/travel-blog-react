@@ -1,0 +1,11 @@
+.post {
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    
+}
+
+.post-section {
+    margin-bottom: 40px;
+}

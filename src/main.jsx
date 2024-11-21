@@ -11,7 +11,7 @@ const Home = React.lazy(() => import('./pages/Home/Home.jsx'));
 const About = React.lazy(() => import('./pages/About/About.jsx'));
 const Popular = React.lazy(() => import('./pages/Popular/Popular.jsx'));
 const Explore = React.lazy(() => import('./pages/Explore/Explore.jsx'));
-const PopularPost = React.lazy(() => import('./components/PopularPost/PopularPost.jsx'));
+const PopularPost = React.lazy(() => import('./components/post/PopularPost/PopularPost.jsx'));
 
 // Setup router with lazy-loaded components
 const router = createBrowserRouter([

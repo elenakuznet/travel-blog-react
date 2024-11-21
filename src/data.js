@@ -1,5 +1,6 @@
 export const destinations = [
     {
+      id: '0',
       name: 'Stari Bar, Montenegro',
       intro: 'A true monument of Montenegrin history and rich culture is Stari Bar. ',
       image: 'img/stari-bar/stari-bar.jpg',
@@ -15,7 +16,8 @@ export const destinations = [
         { src: '/travel-blog-react/img/stari-bar/stari-bar-2.jpg', alt: 'Stari Bar', className: 'post__data-img' },
       ]
     }, 
-    {
+    { 
+        id: '1',
         name: 'Kas, Türkiye',
         image: 'img/kas/kas-photo-7.jpg',
         intro: 'A lovely tangle of mellow bars, markets and beach clubs, Kaş is the jewel of the Turquoise Coast',
@@ -31,6 +33,7 @@ export const destinations = [
         ]
       },
     {
+      id: '2',
       name: 'Cameron Highlands Resort, Malaysia',
       image: 'img/cameron/cameron.jpeg',
       description: 'Cameron Highlands was named after William Cameron, a British Government surveyor who discovered it in 1885 on a mapping expedition but failed to mark his discovery.',
@@ -46,6 +49,7 @@ export const destinations = [
       ]
     },
     {
+      id: '3',
       name: 'Cameron Highlands Resort, Malaysia',
       image: 'img/kyoto.jpg',
       description: 'Cameron Highlands was named after William Cameron, a British Government surveyor who discovered it in 1885 on a mapping expedition but failed to mark his discovery.',
@@ -60,6 +64,7 @@ export const destinations = [
       ]
     },
     {
+      id: '4',
       name: 'Cameron Highlands Resort, Malaysia',
       image: 'img/kyoto.jpg',
       description: 'Cameron Highlands was named after William Cameron, a British Government surveyor who discovered it in 1885 on a mapping expedition but failed to mark his discovery.',
@@ -74,6 +79,7 @@ export const destinations = [
       ]
     },
     {
+      id: '5',
       name: 'Cameron Highlands Resort, Malaysia',
       image: 'img/kyoto.jpg',
       description: 'Cameron Highlands was named after William Cameron, a British Government surveyor who discovered it in 1885 on a mapping expedition but failed to mark his discovery.',

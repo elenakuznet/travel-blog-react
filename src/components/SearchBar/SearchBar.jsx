@@ -1,6 +1,6 @@
 import styles from './SearchBar.module.css';
 
-const SearchBar = ({ value, onChange, placeholder }) => {
+const SearchBar = ({ value, onChange, placeholder, ariaLabel }) => {
     
     return (
         <>
@@ -10,6 +10,7 @@ const SearchBar = ({ value, onChange, placeholder }) => {
                 value={value}
                 onChange={onChange}
                 className={styles['popular__search']}
+                ariaLabel={ariaLabel}
             />
         </>
     )

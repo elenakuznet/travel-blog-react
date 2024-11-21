@@ -1,0 +1,49 @@
+.popular__card {
+    background-color: var(--container-color);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.popular__image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.popular__image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.popular__card:hover .popular__img {
+    transform: scale(1.1);
+}
+
+.popular__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.popular__name {
+    margin: 1rem 0 0.5rem;
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+}
+
+.popular__description {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}

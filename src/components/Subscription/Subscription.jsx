@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import './Subscription.css';
+import styles from './Subscription.module.css';
 import Button from "../shared/Button/Button";
 
 const Subscription = () => {
@@ -13,18 +13,19 @@ const Subscription = () => {
 
     return (
         <section className="section">
-            <div className="subscription">
-                <div className="subscription__image">
-                <img src="/travel-blog-react/img/subscription.jpg" className="subscription__img" alt="Emily traveling" />
+            <div className={styles['subscription']}>
+                <div className={styles['subscription__image']}>
+                <img src="/travel-blog-react/img/subscription.jpg" className={styles['subscription__img']} alt="Emily traveling" />
                 </div>
                 
-                <div className="subscription__content">
-                    <h2 className="subscription__title">Subscribe to Newsletter</h2>
-                    <form className="form" onSubmit={handleSubmit(onSubmit)}>
+                <div className={styles['subscription__content']}>
+                    <h2 className={styles['subscription__title']}>Subscribe to Newsletter</h2>
+                    <form className={styles['form']} onSubmit={handleSubmit(onSubmit)}>
                         <input 
-                            className="input-email"
+                            className={styles['input-email']}
                             type="email"
                             placeholder="Enter your email" 
+                            aria-label="Email Address"
                             { ...register('email', {
                                 required: 'Email is required',
                                 pattern: {
@@ -33,7 +34,6 @@ const Subscription = () => {
                                 }
                             })}/>
                             {errors.email && <p style={{color: 'red'}}>{errors.email.message}</p>}
-                        {/* <button type="submit">Send</button> */}
                         <Button type="submit">Subscribe to Newsletter</Button>
                     </form> 
                     </div>

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 import { destinations } from '../../data'; // Import the destinations array
 import SearchBar from '../../components/SearchBar/SearchBar';
 import './Popular.css';
+import DestinationCard from '../../components/DestinationCard/DestinationCard';
+import { filterDestinations } from '../../utils/filterDestinations';
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
 
 
 function Popular() {
@@ -14,46 +16,28 @@ function Popular() {
   };
 
   // Filter destinations based on the search query
-  const filteredDestinations = destinations.filter((destination) =>
-    destination.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredDestinations = filterDestinations(destinations, searchQuery);
 
   // Determine which list of destinations to display
   const destinationsToDisplay = searchQuery ? filteredDestinations : destinations;
 
   return (
     <section className="popular section">
-      {/* <input
-        type="text"
-        placeholder="Search destinations..."
-        value={searchQuery}
-        onChange={handleSearchChange}
-        className="popular__search"
-      /> */}
+      
       <SearchBar  
           value={searchQuery} 
           onChange={handleSearchChange} 
           placeholder="Search destinations..." 
-
+          aria-label="Search popular destinations"
       />
 
-  
+      {/* <h2 className="section__title">Popular Destinations</h2> */}
 
-      <h2 className="section__title">Popular Destinations</h2>
+      <SectionHeader title={'Popular Destinations'} />
+      
       <div className="popular__container container grid">
-        {destinationsToDisplay.map((destination, index) => (
-          <NavLink 
-            to={`/travel-blog-react/popular/${index}`} 
-            key={index} 
-            className="popular__card"
-          >
-            <div className="popular__image">
-              <img src={destination.image} alt={destination.name} className="popular__img" />
-              <div className="popular__shadow"></div>
-            </div>
-            <h3 className="popular__name">{destination.name}</h3>
-            <p className="popular__description">{destination.description}</p>
-          </NavLink>
+        {destinationsToDisplay.map((destination) => (
+          <DestinationCard destination={destination} key={destination.id} />
         ))}
       </div>
     </section>

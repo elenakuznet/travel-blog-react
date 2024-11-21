@@ -9,16 +9,6 @@
   margin-bottom: 2rem;  /* Space between the title and the cards */
 }
 
-/* .popular__search {
-  padding: 1rem 1.25rem;
-  background-color: var(--container-color);
-  border: none;
-  margin-bottom: 2rem;
-}
-
-.popular__search::placeholder {
-  color: white;
-} */
 
 .popular__container {
   display: grid;
@@ -27,7 +17,7 @@
   justify-items: center;  /* Center the cards within their grid cells */
 }
 
-.popular__card {
+/* .popular__card {
   background-color: var(--container-color);
   border-radius: 10px;
   overflow: hidden;
@@ -39,9 +29,9 @@
 .popular__card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+} */
 
-.popular__image {
+/* .popular__image {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -75,7 +65,7 @@
 .popular__description {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
-}
+} */
 
 /* Responsiveness */
 @media screen and (max-width: 1024px) {

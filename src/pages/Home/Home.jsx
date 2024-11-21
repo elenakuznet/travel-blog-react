@@ -14,6 +14,7 @@ function Home() {
     <div>
       
       <BackgroundSlider/>
+      
       <TelegramSubscription/>
 
       <Posts></Posts>

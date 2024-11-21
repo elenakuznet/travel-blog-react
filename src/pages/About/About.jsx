@@ -1,12 +1,14 @@
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import styles from './About.module.css';
 
 const About = () => {
   return (
     <section className='section'>
         <div className={styles['about']}>
-        <div className={styles['about__header']}>
+        {/* <div className={styles['about__header']}>
           <h2 className={styles['about__title']}>About Me</h2>
-        </div>
+        </div> */}
+        <SectionHeader title={'About Me'}/>
         
         <div className={styles['about__content']}>
           <div className={styles['about__image']}>
@@ -23,7 +25,7 @@ const About = () => {
               I believe that travel is not just about visiting places; it's about experiencing life in its purest form. The connections we make, the moments of awe, and even the challenges we face on the road—all of these shape who we are.
             </p>
 
-            <h2 className={styles['about__description']}>Why I Started This Blog</h2>
+            <h2 className={styles['about__subtitle']}>Why I Started This Blog</h2>
             <p className={styles['about__description']}>
               I started this blog to document my journey, not just for myself, but for anyone who shares the same love for adventure. Whether you're planning your next trip or simply looking for some inspiration, I hope my stories resonate with you.
             </p>

@@ -1,0 +1,7 @@
+.title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-family: var(--second-font);
+    margin-bottom: 2rem;
+    text-align: center;
+}

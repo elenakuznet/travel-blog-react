@@ -3,6 +3,7 @@ import Lottie from 'lottie-react'; // Use Lottie instead of Player
 import './Explore.css';
 import globeAnimation from '../../assets/globe-animation-2.json'; // Make sure this path is correct
 import Button from '../../components/shared/Button/Button';
+import SectionHeader from '../../components/SectionHeader/SectionHeader';
 
 const destinations = ['Paris', 'Tokyo', 'New York', 'Rome', 'Sydney', 'Bali', 'Cairo', 'Barcelona'];
 
@@ -23,7 +24,9 @@ const Explore = () => {
 
   return (
     <div className='section'>
-        <h2 className='explore__title'>Where Should You Go Next?</h2>
+        {/* <h2 className='explore__title'>Where Should You Go Next?</h2> */}
+
+        <SectionHeader title={'Where Should You Go Next?'} />
 
         <div className="explore">
               <div className='globe__wrapper'>

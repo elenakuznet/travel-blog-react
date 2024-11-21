@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './BackgroundSlider.css';
 
 const images = [
@@ -43,10 +43,9 @@ const BackgroundSlider = () => {
       <div className="home__shadow"></div>
       <div className="home__container container grid">
         <div className="home__data">
-          {/* <h3 className="home__subtitle"> Welcome to my blog!</h3> */}
+          
           <h1 className="home__title">
               Hi, I'm Elena!<br></br>
-              
           </h1>
           <p className="home__description">
             Welcome to my blog!

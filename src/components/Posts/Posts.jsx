@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import Button from '../shared/Button/Button';
 import './Posts.css';
+import SectionHeader from '../SectionHeader/SectionHeader';
 
 
 const posts = [
@@ -21,7 +22,9 @@ const posts = [
 const Posts = () => {
     return (
         <section className='section'>
-            <h2 className='section__title'>My recent adventures</h2>
+
+            <SectionHeader title={'My recent adventures'}/>
+            
             <div className="posts__container grid">
                 {posts.map((post, index) => (
                     <NavLink to={`/travel-blog-react/popular/${index}`} key={index}

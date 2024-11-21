@@ -1,7 +1,6 @@
 import './Button.css';
 
-
-const Button = ({ children, onClick, type = 'button', className = '', disabled = false}) => {
+const Button = ({ children, onClick, type = 'button', className = '', disabled = false, icon}) => {
   return (
     <button
       type={type}
@@ -9,9 +8,9 @@ const Button = ({ children, onClick, type = 'button', className = '', disabled =
       className={`button ${className}`} 
       disabled={disabled}
     >
-      {children}
+      {children} {icon && <span className="button__icon">{icon}</span>}
     </button>
   )
 }
 
-export default Button
+export default Button;

@@ -1,0 +1,15 @@
+.subscription {
+    padding: 20px;
+    text-align: center;
+}
+
+.subscription__container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subscription__description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}

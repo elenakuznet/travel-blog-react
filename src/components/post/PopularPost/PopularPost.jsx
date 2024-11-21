@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
-import { destinations } from '../../data';
+import { destinations } from '../../../data';
 import styles from './PopularPost.module.css';
-import PostTitle from '../post/PostTitle/PostTitle';
-import PostIntro from '../post/PostIntro/PostIntro';
-import PostLayout from '../post/PostLayout/PostLayout';
+import PostTitle from '../PostTitle/PostTitle';
+import PostIntro from '../PostIntro/PostIntro';
+import PostLayout from '../PostLayout/PostLayout';
 
 const PopularPost = () => {
   const { index } = useParams();
@@ -25,7 +25,7 @@ const PopularPost = () => {
       {destination.content.map((paragraph, idx) => {
           return (
             <PostLayout 
-              key={idx} 
+              key={destination.id + idx}
               content={paragraph} 
               image={destination.images[idx]} 
               reverse={idx % 2 === 0} 
