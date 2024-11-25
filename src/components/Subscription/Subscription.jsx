@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import styles from './Subscription.module.css';
 import Button from "../shared/Button/Button";
+import SectionWrapper from "../SectionWrapper/SectionWrapper";
 
 const Subscription = () => {
 
@@ -12,7 +13,7 @@ const Subscription = () => {
     }
 
     return (
-        <section className="section">
+        <SectionWrapper>
             <div className={styles['subscription']}>
                 <div className={styles['subscription__image']}>
                 <img src="/travel-blog-react/img/subscription.jpg" className={styles['subscription__img']} alt="Emily traveling" />
@@ -39,7 +40,7 @@ const Subscription = () => {
                     </div>
                     
             </div>
-        </section>
+        </SectionWrapper>
         
     )
 }

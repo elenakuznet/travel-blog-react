@@ -1,9 +1,3 @@
-/* .newsletter {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-} */
-
 .subscription {
     display: grid;
     /* grid-template-columns: 460px 340px; */

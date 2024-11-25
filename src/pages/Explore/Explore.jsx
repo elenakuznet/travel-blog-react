@@ -4,6 +4,7 @@ import './Explore.css';
 import globeAnimation from '../../assets/globe-animation-2.json'; // Make sure this path is correct
 import Button from '../../components/shared/Button/Button';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
+import SectionWrapper from '../../components/SectionWrapper/SectionWrapper';
 
 const destinations = ['Paris', 'Tokyo', 'New York', 'Rome', 'Sydney', 'Bali', 'Cairo', 'Barcelona'];
 
@@ -23,11 +24,10 @@ const Explore = () => {
   };
 
   return (
-    <div className='section'>
-        {/* <h2 className='explore__title'>Where Should You Go Next?</h2> */}
 
+    <SectionWrapper>
+    
         <SectionHeader title={'Where Should You Go Next?'} />
-
         <div className="explore">
               <div className='globe__wrapper'>
               
@@ -52,9 +52,8 @@ const Explore = () => {
                   <h2 className="destination">Your next destination is: {selectedDestination}!</h2>
                 </div>
               )}
-            </div>      
-    </div>
-    
+        </div>      
+    </SectionWrapper>
   );
 };
 

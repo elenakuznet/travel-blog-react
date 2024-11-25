@@ -4,3 +4,9 @@
     color: var(--title-color); 
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .nav__logo {
+        font-size: 1.3rem;
+    }
+}

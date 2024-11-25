@@ -118,13 +118,10 @@ img {
   font-family: var(--body-font);
 }
 
-
 .grid {
   display: grid;
   gap: 1.5rem;
 }
-
-
 
 .container {
   max-width: 1440px;  /* Limits the width of your blog */
@@ -133,9 +130,9 @@ img {
   padding: 0 20px;  /* Optional: Adds padding for small screens */
 }
 
-.section {
+/* .section {
   padding: 50px 0;
-}
+} */
 
 .section__title {
   font-size: var(--h1-font-size);
@@ -158,8 +155,8 @@ a.text {
   }
 }
 
-@media (max-width: 1023px) {
+/* @media (max-width: 1023px) {
   .section {
     padding: 20px 0;
   }
-}
+} */

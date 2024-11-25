@@ -3,7 +3,7 @@ export const destinations = [
       id: '0',
       name: 'Stari Bar, Montenegro',
       intro: 'A true monument of Montenegrin history and rich culture is Stari Bar. ',
-      image: 'img/stari-bar/stari-bar.jpg',
+      image: '/travel-blog-react/img/stari-bar/stari-bar.jpg',
       description: 'The Old Town of Bar in Montenegro, known as Stari Bar, may lie in ruins – but it still has plenty of stories to share with visitors.',
       content: [
         'Many civilizations left traces around the historical site of Stari Bar, which serves as proof of past times. Stari Bar was founded by Illyrians, while it was also a proud home to the Romans, Byzantines, Venetians, and Ottomans. The Old Town of Bar nowadays has stable walls and the ruins of numerous significant buildings that speak tales to its visitors. Though now partially in ruins, many parts of the Stari Bar were renovated and now feature stores, restaurants, and a very popular marketplace. In this historic town, you will see what was left of this cultural center, with churches, towers, the homes of nobles, and a stunning fortress that will captivate you.',
@@ -19,7 +19,7 @@ export const destinations = [
     { 
         id: '1',
         name: 'Kas, Türkiye',
-        image: 'img/kas/kas-photo-7.jpg',
+        image: '/travel-blog-react/img/kas/kas-photo-7.jpg',
         intro: 'A lovely tangle of mellow bars, markets and beach clubs, Kaş is the jewel of the Turquoise Coast',
         description: 'All the trips around the world are a great',
         content: [

@@ -5,6 +5,7 @@ import './Popular.css';
 import DestinationCard from '../../components/DestinationCard/DestinationCard';
 import { filterDestinations } from '../../utils/filterDestinations';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
+import SectionWrapper from '../../components/SectionWrapper/SectionWrapper';
 
 
 function Popular() {
@@ -22,16 +23,15 @@ function Popular() {
   const destinationsToDisplay = searchQuery ? filteredDestinations : destinations;
 
   return (
-    <section className="popular section">
-      
+
+    <SectionWrapper className="popular">
+
       <SearchBar  
           value={searchQuery} 
           onChange={handleSearchChange} 
           placeholder="Search destinations..." 
           aria-label="Search popular destinations"
       />
-
-      {/* <h2 className="section__title">Popular Destinations</h2> */}
 
       <SectionHeader title={'Popular Destinations'} />
       
@@ -40,7 +40,7 @@ function Popular() {
           <DestinationCard destination={destination} key={destination.id} />
         ))}
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
 

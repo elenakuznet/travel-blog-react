@@ -1,10 +1,10 @@
-import './Loader.css';
+import styles from './Loader.module.css';
 
 
 const Loader = ( {message = "Loading..."}) => {
     return (
-        <div className="loader-container">
-            <div className="spinner"></div>
+        <div className={styles['loader-container']}>
+            <div className={styles['spinner']}></div>
             <p>{message}</p>
         </div>
     )

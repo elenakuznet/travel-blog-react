@@ -55,7 +55,7 @@ const router = createBrowserRouter([
       { 
         path: "home/:index", 
         element: (
-          <Suspense fallback={<Loader message="Loading posts..." />}>
+          <Suspense fallback={<Loader message="Loading post..." />}>
             <PopularPost />
           </Suspense>
         ) 
