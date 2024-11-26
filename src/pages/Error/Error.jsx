@@ -12,7 +12,6 @@ const Error = () => {
         </NavLink>
       </div>
     )
-
 }
 
 export default Error;
